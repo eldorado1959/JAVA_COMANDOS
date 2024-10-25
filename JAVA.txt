@@ -1,0 +1,223 @@
+
+// Declaração de variáveis de tipos primitivos
+int idade = 30;        // Variável do tipo inteiro (int)
+
+double salario = 4500.75;  // Variável do tipo ponto flutuante (double)
+
+char genero = 'M';      // Variável do tipo caractere (char)
+
+boolean ativo = true;   // Variável do tipo booleano (verdadeiro/falso)
+
+
+____________________________________________________________________________________
+
+SAIDA DE DADOS Saída de Dados (`System.outSystem.out.println):
+
+// Exibe uma mensagem no console
+
+System.out.println("Olá, Mundo!"); // Saída de texto simples
+
+System.out.println("Idade: " + idade); // Exibe o valor da variável idade
+
+____________________________________________________________________________________
+
+ENTRADA DE DADOS ( Scanner):
+
+import java.util.Scanner; // Importa a classe Scanner para entrada de dados
+
+// Cria um objeto Scanner para capturar a entrada do usuário
+Scanner scanner = new Scanner(System.in);
+
+// Entrada de dados do tipo String
+System.out.print("Digite seu nome: ");
+
+String nome = scanner.nextLine();
+
+// Entrada de dados do tipo int
+System.out.print("Digite sua idade: ");
+
+int idadeUsuario = scanner.nextInt();
+
+// Exibe as informações capturadas
+System.out.println("Nome: " + nome);
+
+System.out.println("Idade: " + idadeUsuario);
+
+
+ESTRUTURAS CONDICIONAIS
+
+// Estrutura condicional simples
+if (idade >= 18) {
+    System.out.println("Você é maior de idade.");
+} else {
+    System.out.println("Você é menor de idade.");
+}
+
+____________________________________________________________________________________
+
+SWITCH
+
+// Estrutura condicional com múltiplos casos
+int diaSemana = 3;
+switch (diaSemana) {
+    case 1:
+        System.out.println("Domingo");
+        break;
+    case 2:
+        System.out.println("Segunda-feira");
+        break;
+    case 3:
+        System.out.println("Terça-feira");
+        break;
+    default:
+        System.out.println("Dia inválido");
+        break;
+}
+
+
+____________________________________________________________________________________
+
+FOR
+
+// Laço de repetição "for"
+for (int i = 1; i <= 5; i++) {
+    System.out.println("Contagem: " + i);
+}
+
+
+____________________________________________________________________________________
+
+WHILE
+
+// Laço de repetição "while"
+int contador = 0;
+while (contador < 5) {
+    System.out.println("Contagem: " + contador);
+    contador++;  // Incrementa o valor de contador
+}
+
+
+____________________________________________________________________________________
+
+DO WHILE
+
+// Laço "do-while" que garante a execução do bloco ao menos uma vez
+int num = 10;
+do {
+    System.out.println("Número: " + num);
+    num--;
+} while (num > 0);
+
+
+____________________________________________________________________________________
+
+5. Funções ou Métodos
+Declaração de Método Simples :
+
+// Declaração de um método que soma dois números
+public static int somar(int a, int b) {
+    return a + b; // Retorna a soma de 'a' e 'b'
+}
+
+// Chamando o método
+int resultado = somar(10, 20);
+System.out.println("Resultado da soma: " + resultado);
+
+
+____________________________________________________________________________________
+
+
+6. Matrizes (Vetores)
+Declaração de um Array :
+
+// Array de inteiros
+int[] numeros = {10, 20, 30, 40, 50};
+
+// Acessando e exibindo elementos do array
+System.out.println("Primeiro número: " + numeros[0]);
+System.out.println("Último número: " + numeros[numeros.length - 1]);
+
+// Percorrendo o array com um laço for
+for (int i = 0; i < numeros.length; i++) {
+    System.out.println("Número na posição " + i + ": " + numeros[i]);
+}
+
+
+____________________________________________________________________________________
+
+7. Orientação a Objetos: Classes e Objetos
+Criação de uma Classe :
+
+// Definindo uma classe Pessoa
+public class Pessoa {
+    // Atributos da classe
+    String nome;
+    int idade;
+
+    // Método da classe
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+    }
+}
+
+// Criando e usando um objeto da classe Pessoa
+Pessoa pessoa1 = new Pessoa();
+pessoa1.nome = "João";
+pessoa1.idade = 25;
+pessoa1.exibirInformacoes();
+
+
+____________________________________________________________________________________
+
+8. Try/Catch (Tratamento de Exceções)
+
+// Exemplo de tratamento de exceção para evitar erro de divisão por zero
+try {
+    int resultado = 10 / 0; // Isto vai gerar um erro (ArithmeticException)
+} catch (ArithmeticException e) {
+    System.out.println("Erro: divisão por zero não é permitida.");
+}
+
+____________________________________________________________________________________
+
+9. Operadores Matemáticos e Lógicos
+Operadores Matemáticos :
+
+int a = 10;
+int b = 5;
+
+int soma = a + b;      // Soma
+int subtracao = a - b; // Subtração
+int multiplicacao = a * b; // Multiplicação
+int divisao = a / b;       // Divisão
+int resto = a % b;         // Resto da divisão (mod)
+
+System.out.println("Soma: " + soma);
+System.out.println("Divisão: " + divisao);
+
+
+
+____________________________________________________________________________________
+
+Operadores Lógicos :
+
+boolean condicao1 = true;
+boolean condicao2 = false;
+
+if (condicao1 && condicao2) {
+    System.out.println("Ambas as condições são verdadeiras.");
+} else if (condicao1 || condicao2) {
+    System.out.println("Pelo menos uma das condições é verdadeira.");
+} else {
+    System.out.println("Nenhuma condição é verdadeira.");
+}
+
+____________________________________________________________________________________
+
+
+____________________________________________________________________________________
+
+
+____________________________________________________________________________________
+
